@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MIDI DRUM PAD</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="images/bateria.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Midi Drum Pad</h1>
+
+    <section class="keyboard">
+      <button class="key pom_key">Pom</button>
+      <button class="key clap_key">Clap</button>
+      <button class="key tim_key">Tim</button>
+
+      <button class="key puff_key">Puff</button>
+      <button class="key splash_key">Splash</button>
+      <button class="key toim_key">Toim</button>
+
+      <button class="key psh_key">Psh</button>
+      <button class="key tic_key">Tic</button>
+      <button class="key tom_key">Tom</button>
+    </section>
+
+    <audio src="sounds/keyq.wav" id="pom_key_sound"></audio>
+    <audio src="sounds/keyw.wav" id="clap_key_sound"></audio>
+    <audio src="sounds/keye.wav" id="tim_key_sound"></audio>
+    <audio src="sounds/keya.wav" id="puff_key_sound"></audio>
+    <audio src="sounds/keys.wav" id="splash_key_sound"></audio>
+    <audio src="sounds/keyd.wav" id="toim_key_sound"></audio>
+    <audio src="sounds/keyz.wav" id="psh_key_sound"></audio>
+    <audio src="sounds/keyx.wav" id="tic_key_sound"></audio>
+    <audio src="sounds/keyc.wav" id="tom_key_sound"></audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>
