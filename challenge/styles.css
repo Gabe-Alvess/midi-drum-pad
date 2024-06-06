@@ -20,9 +20,10 @@ input {
 }
 
 h1 {
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .keyboard {
@@ -52,4 +53,21 @@ input[type="tel"] {
   padding: 10px;
   text-align: center;
   width: 300px;
+}
+
+input[type="button"].active,
+input[type="button"]:active {
+  background-color: lightgreen;
+}
+
+.page_link {
+  margin-top: 50px;
+  border: 2px solid #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page_link:hover {
+  transition: cubic-bezier(0.77, 0, 0.175, 1) 300ms;
+  transform: scale(105%);
 }

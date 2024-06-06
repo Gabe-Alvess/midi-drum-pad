@@ -1,16 +1,33 @@
 const keyList = document.querySelectorAll(".key");
 
-function playKeySound(keyId) {
-  document.querySelector(keyId).play();
+function playKeySound(audioSelector) {
+  const element = document.querySelector(audioSelector);
+
+  if (element && element.localName === "audio") {
+    element.play();
+  } else {
+    console.log("Element not found or invalid selector!");
+  }
 }
 
 for (let i = 0; i < keyList.length; i++) {
+  const key = keyList[i];
   const keyName = keyList[i].classList[1];
-
   //Template String
   const keyId = `#${keyName}_sound`;
-  keyList[i].onclick = () => {
+
+  key.onclick = () => {
     playKeySound(keyId);
+  };
+
+  key.onkeydown = function (event) {
+    if (event.code === "Enter" || event.code === "Space") {
+      key.classList.add("active");
+    }
+  };
+
+  key.onkeyup = function () {
+    key.classList.remove("active");
   };
 }
 

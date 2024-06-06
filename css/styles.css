@@ -65,3 +65,15 @@ h1 {
 .key:active:focus {
   box-shadow: 3px 3px 0 var(--dark-red) inset, 1px 1px 10px var(--light);
 }
+
+.page_link {
+  margin-top: 50px;
+  border: 2px solid #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page_link:hover {
+  transition: cubic-bezier(0.77, 0, 0.175, 1) 300ms;
+  transform: scale(105%);
+}

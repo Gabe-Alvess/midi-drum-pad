@@ -6,4 +6,14 @@ for (let i = 0; i < keysList.length; i++) {
   key.onclick = () => {
     display.value = display.value + key.value;
   };
+
+  key.onkeydown = (event) => {
+    if (event.code === "Enter" || event.code === "Space") {
+      key.classList.add("active");
+    }
+  };
+
+  key.onkeyup = () => {
+    key.classList.remove("active");
+  };
 }
